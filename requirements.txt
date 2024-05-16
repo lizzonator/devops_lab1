@@ -1,2 +1,2 @@
-peewee==3.17.1
-pytest==8.0.1
+peewee
+pytest
