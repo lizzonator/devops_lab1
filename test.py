@@ -2,6 +2,7 @@ from main import init, fill, show, db, ORDERS, CLIENTS
 from peewee import *
 from os.path import exists
 
+# проверка что база данных появляется после инита
 def test_init():
     db.connect()
     #init()
@@ -20,6 +21,7 @@ def test_init():
 #         show(tablename)
 #     db.close()
 
+# проверка что в базе данных есть 10 записей
 def test_fill():
     db.connect()
     # for i in range(25):
@@ -33,6 +35,7 @@ def test_fill():
 #         show(tablename)
 #     db.close()
 
+# дописать проверку что после инита появляются нужные колонки
 # def test_columns():
 #     db.connect()
 #     assert 
