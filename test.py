@@ -8,13 +8,13 @@ def test_init():
 
 # проверка что есть нужные столбцы
 def test_columns():
-    assert 'NAME' in Clients._meta.fields
-    assert 'CITY' in Clients._meta.fields
-    assert 'ADDRESS' in Clients._meta.fields
-    assert 'CLIENT' in Orders._meta.fields
-    assert 'DATE' in Orders._meta.fields
-    assert 'AMOUNT' in Orders._meta.fields
-    assert 'DESCRIPTION' in Orders._meta.fields
+    assert 'NAME' in CLIENTS._meta.fields
+    assert 'CITY' in CLIENTS._meta.fields
+    assert 'ADDRESS' in CLIENTS._meta.fields
+    assert 'CLIENT' in ORDERS._meta.fields
+    assert 'DATE' in ORDERS._meta.fields
+    assert 'AMOUNT' in ORDERS._meta.fields
+    assert 'DESCRIPTION' in ORDERS._meta.fields
 
 # проверка что в базе данных есть 10 записей
 def test_fill():
